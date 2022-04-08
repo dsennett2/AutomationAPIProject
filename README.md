@@ -1,15 +1,17 @@
-# SoftwareArchitectureCLassApplication
-This is sandbox code to show proof of concept usages of some principles taught in University of Cincinnati's Software Architecture Class.
+We have created six different files:
 
-This code base will be used for several assignments, but it's value comes from having several libraries in play, as well as some example usages of concepts of singletons, static initializers, journaling, and automation APIs
+AutomationAPI_ExtendedFeatureCollection.h
 
-Additionally, this also shows how to setup a Basic Action to verify a merge request compiles or not.
+AutomationAPI_Widget.h
 
+AutomationAPI_WidgetBuilder.h
 
-This software to show off some workflows with using Java and automation APIs depends upon a Java Provider to present.  Otherwise a build error will occur.
+ExtendedFeatureCollection.cpp
 
-To Resovle this install a Java JDK (such as Adopt OpenJDK), and then provide the proper header includes and library location.  It is being proposed as future enhancment to make the jvm library be loaded dyanmically.
+Widget.cpp
 
-Or optionally comment out the code in PerformJavaAutomationWorkflow, and turn off building the JavaLoader library.
+WidgetBuilder.cpp
 
-[Journaling Module Design](documentation_markdown/journaling.md)
+All of these files are in the AutomationBinding library.
+
+To look at the API reference generated with doxygen, run the index.html file inside of the html folder.
